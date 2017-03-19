@@ -1,0 +1,48 @@
+body  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: lightgrey;
+}
+
+.iconBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 64px;
+  margin: 8px;
+  padding: 8px;
+  font-family: courier;
+  font-size: 10px;
+  color: black;
+  background: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+.iconBox > p {
+  width: 64px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+svg {
+  width: 48px;
+  height: 48px;
+  fill: black;
+}
+
+dialog {
+  /*position: absolute;
+  top: 8px;*/
+  background-color: blue;
+  color: white;
+  border: 0;
+  font-family: courier;
+  font-size: 16px;
+}
+
+dialog::backdrop {
+  background-color: transparent;;
+}
