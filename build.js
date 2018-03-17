@@ -32,11 +32,13 @@ async function copyIcons(_paths) {
   const names = paths.map(createNameFromPath)
   const files = await Promise.all(readFiles(paths))
 
-  const html = (await Promise.all(names.map(async (name, i) => {
-    await fs.writeFile(`${out}/${name}.svg`, files[i], `utf8`)
+  const html = (await Promise.all(
+    names.map(async (name, i) => {
+      await fs.writeFile(`${out}/${name}.svg`, files[i], `utf8`)
 
-    return createSvgSwatch(name, files[i])
-  }))).join(``)
+      return createSvgSwatch(name, files[i])
+    })
+  )).join(``)
 
   log(`Writing demo html file...`)
   await writeHtml(html)

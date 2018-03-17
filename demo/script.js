@@ -1,10 +1,10 @@
-;(() => {
-// ---
+const dialog = document.querySelector('dialog')
+const icons = document.querySelectorAll('.iconBox')
+const filter = document.querySelector('.filter')
+const clipboard = new Clipboard('.iconBox')
 
-const dialog = document.querySelector(`dialog`)
-const clipboard = new Clipboard(`.iconBox`)
-
-clipboard.on(`success`, showSuccessDialog)
+filter.addEventListener('input', onInput)
+clipboard.on('success', showSuccessDialog)
 
 function showSuccessDialog(e) {
   dialog.innerHTML = `" <u>${e.text}</u> " copied`
@@ -12,5 +12,17 @@ function showSuccessDialog(e) {
   setTimeout(() => dialog.close(), 1234)
 }
 
-// ---
-})()
+function onInput(e) {
+  const text = e.currentTarget.value
+
+  icons.forEach(icon => {
+    if (
+      text === '' ||
+      icon.getAttribute('data-clipboard-text').includes(text)
+    ) {
+      icon.classList.remove('hidden')
+    } else {
+      icon.classList.add('hidden')
+    }
+  })
+}
