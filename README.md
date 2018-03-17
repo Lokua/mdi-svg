@@ -5,13 +5,15 @@ Contains a flat folder of camel cased, [material-design-icons][0] svg files.
 ## Install
 
 npm:
+
 ```sh
-npm i mdi-svg --save
+npm i @lokua/mdi-svg --save
 ```
 
 yarn:
+
 ```sh
-yarn add mdi-svg --save
+yarn add @lokua/mdi-svg --save
 ```
 
 ## Example
@@ -20,8 +22,11 @@ Assuming you have svg loading support in webpack or similar, you can make
 a simple icon component with React:
 
 ```js
-export default ({ name }) =>
-  <div dangerouslySetInnerHTML={{ __html: require(`mdi-svg/svg/${name}.svg`) }} />
+export default ({ name }) => (
+  <div
+    dangerouslySetInnerHTML={{ __html: require(`mdi-svg/svg/${name}.svg`) }}
+  />
+)
 ```
 
 ## Demo

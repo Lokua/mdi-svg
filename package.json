@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "node --harmony-async-await build"
+    "build": "node build"
   },
   "devDependencies": {
     "camelcase": "^4.0.0",
@@ -13,7 +13,7 @@
   "name": "mdi-svg",
   "version": "1.0.0",
   "description": "flat folder of camelcased, material-design-icons svg files",
-  "main": "index.js",
+  "main": "@lokua/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Lokua/mdi-svg.git"
