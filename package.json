@@ -1,12 +1,17 @@
 {
   "name": "@lokua/mdi-svg",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "index.js",
   "scripts": {
     "build": "node build"
   },
   "description": "flat folder of camelcased, material-design-icons svg files",
-  "keywords": ["material", "design", "icons", "svg"],
+  "keywords": [
+    "material",
+    "design",
+    "icons",
+    "svg"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Lokua/mdi-svg.git"
