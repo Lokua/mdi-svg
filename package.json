@@ -10,10 +10,10 @@
     "recursive-readdir": "^2.1.1"
   },
   "dependencies": {},
-  "name": "mdi-svg",
+  "name": "@lokua/mdi-svg",
   "version": "2.0.0",
   "description": "flat folder of camelcased, material-design-icons svg files",
-  "main": "@lokua/index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Lokua/mdi-svg.git"
