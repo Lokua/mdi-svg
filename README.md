@@ -40,7 +40,7 @@ Add the following to your project package.json scripts section:
 
 ```json
 "scripts": {
-  "icons": "open ./node_modules/mdi-svg/demo/index.html"
+  "icons": "open ./node_modules/@lokua/mdi-svg/demo/index.html"
 }
 ```
 
